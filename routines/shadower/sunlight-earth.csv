@@ -1,0 +1,18 @@
+*, x=0.804, y=0.332, frequency=1, skip=False, adjust=True
+    ShadowVeil, direction=left
+*, x=0.679, y=0.332, frequency=8, skip=False, adjust=False
+    CruelStab, direction=left, attacks=2, repetitions=8
+*, x=0.348, y=0.332, frequency=8, skip=False, adjust=False
+    SuddenRaid
+    Wait, duration=0.2
+    CruelStab, direction=right, attacks=2, repetitions=8
+*, x=0.168, y=0.261, frequency=8, skip=False, adjust=True
+    DarkFlare, direction=right
+    Wait, duration=0.2
+    CruelStab, direction=right, attacks=2, repetitions=8
+*, x=0.304, y=0.190, frequency=8, skip=False, adjust=True
+    CruelStab, direction=right, attacks=2, repetitions=10
+*, x=0.582, y=0.136, frequency=8, skip=False, adjust=False
+    CruelStab, direction=right, attacks=2, repetitions=10
+*, x=0.929, y=0.190, frequency=1, skip=False, adjust=True
+    CruelStab, direction=left, attacks=2, repetitions=10

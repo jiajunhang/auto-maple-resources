@@ -9,32 +9,49 @@ from src.common.vkeys import press, key_down, key_up
 
 # List of key mappings
 class Key:
-    # Movement
-    JUMP = 'space' 
-    FLASH_JUMP = 'space' 
-    SHADOW_ASSAULT = 't' 
+    # # Movement
+    # JUMP = 'space' 
+    # FLASH_JUMP = 'space' 
+    # SHADOW_ASSAULT = 't' 
 
-    # Buffs
-    SHADOW_PARTNER = '1' 
-    MAPLE_WARRIOR = '2' 
-    EPIC_ADVENTURE = '3'
-    SPEED_INFUSION = '8'
-    HOLY_SYMBOL = '4'
-    SHARP_EYE = '5'
-    COMBAT_ORDERS = '6'
-    ADVANCED_BLESSING = '7'
+    # # Buffs
+    # SHADOW_PARTNER = '1' 
+    # MAPLE_WARRIOR = '2' 
+    # EPIC_ADVENTURE = '3'
+    # SPEED_INFUSION = '8'
+    # HOLY_SYMBOL = '4'
+    # SHARP_EYE = '5'
+    # COMBAT_ORDERS = '6'
+    # ADVANCED_BLESSING = '7'
+
+    # # Skills
+    # CRUEL_STAB = 'q' 
+    # MESO_EXPLOSION = 'w' 
+    # SUDDEN_RAID = 'e'
+    # DARK_FLARE = 's' 
+    # SHADOW_VEIL = 'a' 
+    # ARACHNID = 'f4' 
+    # ERDA_SHOWER = 'f5' 
+    # TRICKBLADE = 'd'
+    # SLASH_SHADOW_FORMATION = 'v'
+    # SONIC_BLOW = 'b'
+    # Movement
+
+    JUMP = 'a' 
+    FLASH_JUMP = 'a' 
+    SHADOW_ASSAULT = 'z' 
 
     # Skills
-    CRUEL_STAB = 'q' 
-    MESO_EXPLOSION = 'w' 
-    SUDDEN_RAID = 'e'
-    DARK_FLARE = 's' 
-    SHADOW_VEIL = 'a' 
-    ARACHNID = 'f4' 
-    ERDA_SHOWER = 'f5' 
-    TRICKBLADE = 'd'
+    CRUEL_STAB = 'd' 
+    MESO_EXPLOSION = 'end' 
+    SUDDEN_RAID = 'f'
+    DARK_FLARE = 'h' 
+    SHADOW_VEIL = 'g' 
+    # ARACHNID = 'f4' 
+    # ERDA_SHOWER = 'f5' 
+    TRICKBLADE = 'c'
     SLASH_SHADOW_FORMATION = 'v'
-    SONIC_BLOW = 'b'
+    SONIC_BLOW = 'x'
 
 
 #########################
@@ -122,26 +139,27 @@ class Buff(Command):
         self.decent_buff_time = 0
 
     def main(self):
-        buffs = [Key.SPEED_INFUSION, Key.HOLY_SYMBOL, Key.SHARP_EYE, Key.COMBAT_ORDERS, Key.ADVANCED_BLESSING]
+        # buffs = [Key.SPEED_INFUSION, Key.HOLY_SYMBOL, Key.SHARP_EYE, Key.COMBAT_ORDERS, Key.ADVANCED_BLESSING]
+        buffs = []
         now = time.time()
 
-        if self.cd120_buff_time == 0 or now - self.cd120_buff_time > 120:
-	        press(Key.EPIC_ADVENTURE, 2)
-	        self.cd120_buff_time = now
-        if self.cd180_buff_time == 0 or now - self.cd180_buff_time > 180:
-	        self.cd180_buff_time = now
-        if self.cd200_buff_time == 0 or now - self.cd200_buff_time > 200:
-	        press(Key.SHADOW_PARTNER, 2)
-	        self.cd200_buff_time = now
-        if self.cd240_buff_time == 0 or now - self.cd240_buff_time > 240:
-	        self.cd240_buff_time = now
-        if self.cd900_buff_time == 0 or now - self.cd900_buff_time > 900:
-	        press(Key.MAPLE_WARRIOR, 2)
-	        self.cd900_buff_time = now
-        if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
-	        for key in buffs:
-		        press(key, 3, up_time=0.3)
-	        self.decent_buff_time = now		
+        # if self.cd120_buff_time == 0 or now - self.cd120_buff_time > 120:
+	    #     press(Key.EPIC_ADVENTURE, 2)
+	    #     self.cd120_buff_time = now
+        # if self.cd180_buff_time == 0 or now - self.cd180_buff_time > 180:
+	    #     self.cd180_buff_time = now
+        # if self.cd200_buff_time == 0 or now - self.cd200_buff_time > 200:
+	    #     press(Key.SHADOW_PARTNER, 2)
+	    #     self.cd200_buff_time = now
+        # if self.cd240_buff_time == 0 or now - self.cd240_buff_time > 240:
+	    #     self.cd240_buff_time = now
+        # if self.cd900_buff_time == 0 or now - self.cd900_buff_time > 900:
+	    #     press(Key.MAPLE_WARRIOR, 2)
+	    #     self.cd900_buff_time = now
+        # if self.decent_buff_time == 0 or now - self.decent_buff_time > settings.buff_cooldown:
+	    #     for key in buffs:
+		#         press(key, 3, up_time=0.3)
+	    #     self.decent_buff_time = now		
 
 			
 class FlashJump(Command):

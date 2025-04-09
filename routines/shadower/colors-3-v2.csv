@@ -1,0 +1,42 @@
+*, x=0.403, y=0.140, frequency=8, skip=False, adjust=True
+    Wait, duration=1
+    ShadowVeil, direction=right
+    Wait, duration=0.2
+    CruelStab, direction=right, attacks=2, repetitions=4
+    Wait, duration=0.1
+    CruelStab, direction=left, attacks=2, repetitions=5
+    Wait, duration=0.1
+*, x=0.517, y=0.140, frequency=8, skip=False, adjust=False
+    Wait, duration=1
+    SuddenRaid
+    Wait, duration=0.1
+    CruelStab, direction=right, attacks=2, repetitions=3
+    Wait, duration=0.1
+    CruelStab, direction=left, attacks=2, repetitions=3
+    Wait, duration=0.1
+*, x=0.686, y=0.140, frequency=8, skip=False, adjust=False
+    Wait, duration=0.5
+    CruelStab, direction=left, attacks=2, repetitions=4
+    Wait, duration=0.2
+    MesoExplosion
+    Wait, duration=0.2
+*, x=0.614, y=0.093, frequency=8, skip=False, adjust=False
+    Wait, duration=0.5
+    DarkFlare, direction=right
+    Wait, duration=0.2
+    CruelStab, direction=right, attacks=2, repetitions=5
+    Wait, duration=0.2
+*, x=0.432, y=0.093, frequency=8, skip=False, adjust=False
+    Wait, duration=0.5
+    SlashShadowFormation
+    Wait, duration=0.3
+    CruelStab, direction=left, attacks=2, repetitions=5
+    Wait, duration=0.2
+    CruelStab, direction=right, attacks=2, repetitions=5
+*, x=0.237, y=0.140, frequency=8, skip=False, adjust=true
+    Wait, duration=0.3
+    SuddenRaid
+    Wait, duration=0.2
+    SonicBlow
+    Wait, duration=0.2
+    CruelStab, direction=right, attacks=2, repetitions=6

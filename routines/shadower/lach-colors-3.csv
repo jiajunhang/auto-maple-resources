@@ -1,0 +1,43 @@
+
+@, label=summoning
+*, x=0.314, y=0.140, frequency=1, skip=False, adjust=False
+    Wait, duration=0.5
+    ShadowVeil, direction=right
+    Fall, distance=0.1
+
+@, label=mobbing
+*, x=0.428, y=0.140, frequency=8, skip=False, adjust=False
+    Wait, duration=1
+    Fall, distance=0.2
+    CruelStabRandomDirection
+    Wait, duration=0.3
+    CruelStabRandomDirection
+    Wait, duration=0.3
+    CruelStabRandomDirection
+    Wait, duration=0.3
+    CruelStabRandomDirection
+*, x=0.530, y=0.140, frequency=1, skip=False, adjust=False
+    DarkFlare, direction=right
+*, x=0.610, y=0.140, frequency=1, skip=False, adjust=False
+    CruelStabRandomDirection
+*, x=0.678, y=0.140, frequency=8, skip=False, adjust=False
+    Wait, duration=0.2
+    CruelStabRandomDirection
+    Wait, duration=0.2
+    CruelStabRandomDirection
+    Wait, duration=0.2
+    CruelStabRandomDirection
+    Wait, duration=0.2
+    SlashShadowFormation
+*, x=0.487, y=0.093, frequency=1, skip=False, adjust=False
+    CruelStabRandomDirection
+    Wait, duration=0.15
+    CruelStabRandomDirection
+    Wait, duration=0.15
+    CruelStabRandomDirection
+*, x=0.653, y=0.093, frequency=1, skip=False, adjust=False
+    CruelStabRandomDirection
+    Wait, duration=0.15
+    CruelStabRandomDirection
+    Wait, duration=0.15
+    CruelStabRandomDirection
